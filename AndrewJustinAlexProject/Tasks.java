@@ -46,4 +46,26 @@ public class Tasks{
 			return "Index " + taskToEnd + " out of bounds.";
 		}
 	}
+	
+	public Task[] allTasks(){
+		Task[] dayOrderedTasks = new Task[tasks.length()];
+		Task[] fullOrderedTasks = new Task[tasks.length()];
+		int minDate = 100;
+		int maxDate = -100;
+		for (Task task in tasks){
+			if (task.daysUntilDue < minDate){
+				minDate = task.daysUntilDue;
+			}
+			if (task.daysUntildue > maxDate){
+				maxDate = task.daysUntilDue;
+			}
+		}
+		
+		maxDate++;
+		
+		for (int curDate = minDate; curDate < maxDate; curDate++){
+			for (Task task in tasks){
+			}
+		}
+	}
 }
