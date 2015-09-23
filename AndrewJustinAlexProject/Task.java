@@ -13,4 +13,8 @@ public class Task
 		priority=taskPriority;
 		daysUntilDue=taskDaysDue;
 	}
+	
+	public void nextDay(){
+		daysUntilDue--;
+	}
 }
