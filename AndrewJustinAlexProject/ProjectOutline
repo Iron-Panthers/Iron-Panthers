@@ -21,13 +21,19 @@ Classes:
 			-print them with numbers
 			-again in order of importance
 		e. finishTask (int taskToEnd):
+			-remove the task from the list
 			-write a message saying  "you finished this task n days late" (if it was late), "you finished this task on time" (if on time), or "you finished this task n days early" (if removed early)
 		f. showTaskDesc (int taskToShow):
 			-print the Task's description
+		g. allNextDay:
+			-decrement all Task (s) date
 	2.Task:
 		a. Integer called Priority
 		b. String called Name
 		c. String called Description
+		d. Integer called DaysUntilDue
+		e. nextDay:
+			-decremement daysUntilDue
 	3. UserInterface
 		a.takeUsrInput:
 			-get a line of text from the user
