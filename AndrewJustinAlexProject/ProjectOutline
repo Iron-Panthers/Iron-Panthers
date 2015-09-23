@@ -1,0 +1,36 @@
+Task Management Software
+
+Classes:
+	1.Tasks:
+		a. ArrayList of Task
+		b. addTask:
+			-check if its a duplicate
+			-adds a Task to ArrayList
+			-update order of ArrayList for its priority
+			-print out a success message
+		c. tasksForToday:
+			-print all the tasks that are due tomorrow, or already due
+			-add a "late" tag for tasks that are already supposed to be done
+			-print them with numbers (ex. 1. task1 2. task2 3. task3)
+			-print in order of importance
+		d. allTasks:
+			-print all Tasks 
+			-add a "due" tag for the ones that are due tomorrow
+			-add a "late"  tag for the ones that are already due
+			-order first by due date, then by importance (first group is all the late ones, within that group they are ordered by importance, seocnd is due, third is other)
+			-print them with numbers
+			-again in order of importance
+		e. finishTask (int taskToEnd):
+			-write a message saying  "you finished this task n days late" (if it was late), "you finished this task on time" (if on time), or "you finished this task n days early" (if removed early)
+		f. showTaskDesc (int taskToShow):
+			-print the Task's description
+	2.Task:
+		a. Integer called Priority
+		b. String called Name
+		c. String called Description
+	3. UserInterface
+		a.takeUsrInput:
+			-get a line of text from the user
+			-convert to lower case
+			-do a bunch if statements to find out what thee user typed
+	4. Main
