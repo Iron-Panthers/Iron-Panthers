@@ -15,8 +15,6 @@ Classes:
 			-print in order of importance
 		d. allTasks:
 			-print all Tasks 
-			-add a "due" tag for the ones that are due tomorrow
-			-add a "late"  tag for the ones that are already due
 			-order first by due date, then by importance (first group is all the late ones, within that group they are ordered by importance, seocnd is due, third is other)
 			-print them with numbers
 			-again in order of importance
@@ -39,4 +37,11 @@ Classes:
 			-get a line of text from the user
 			-convert to lower case
 			-do a bunch if statements to find out what thee user typed
+		b. printTasks(Task[] tasksToPrint):
+			-iterate over Task[] printing their names (with numbers)
+			-also write due date
+		c. printTasksWithDue(Task[] tasksToPrint):
+			-iterate over Task[] printing names with numbers
+			-also include a "due" tag if due, and a "late" tag if late
+			-also write due date
 	4. Main
