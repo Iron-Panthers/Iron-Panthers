@@ -10,13 +10,10 @@ Classes:
 			-print out a success message
 		c. tasksForToday:
 			-print all the tasks that are due tomorrow, or already due
-			-add a "late" tag for tasks that are already supposed to be done
-			-print them with numbers (ex. 1. task1 2. task2 3. task3)
 			-print in order of importance
 		d. allTasks:
 			-print all Tasks 
 			-order first by due date, then by importance (first group is all the late ones, within that group they are ordered by importance, seocnd is due, third is other)
-			-print them with numbers
 			-again in order of importance
 		e. finishTask (int taskToEnd):
 			-remove the task from the list
