@@ -48,7 +48,7 @@ public class Tasks{
 	}
 	
 	public Task[] allTasks(){
-		Task[] dayOrderedTasks = new Task[tasks.length()];
+		Task[] importanceOrderedTasks = new Task[tasks.length()];
 		Task[] fullOrderedTasks = new Task[tasks.length()];
 		int minDate = 100;
 		int maxDate = -100;
@@ -63,8 +63,30 @@ public class Tasks{
 		
 		maxDate++;
 		
+		boolean didSwap = true;
+		while (didSwap){
+			didSwap = false;
+			for (int i = tasks.length()-2; i > -1; i--){
+				if (tasks.get(i).priority > tasks.get(i+1).priority){
+					Task thisTask = tasks.get(i);
+					tasks.set(i, tasks.get(i+1));
+					tasks.set(i+1, thisTask);
+					didSwap = true
+				}
+			}
+		}
+		
+		int i = 0;
+		for (Task task in tasks){
+			importanceOrderedTasks[i] = task;
+			i++;
+		}
+		
 		for (int curDate = minDate; curDate < maxDate; curDate++){
-			for (Task task in tasks){
+			for (int i = 0; i < importanceOrderedTasks.length; i++){
+				if (importanceOrderedTasks[i].daysUntilDue == curDate){
+					fullOrderedTasks[i] = importanceOrderedTasks[i];
+				}
 			}
 		}
 	}
