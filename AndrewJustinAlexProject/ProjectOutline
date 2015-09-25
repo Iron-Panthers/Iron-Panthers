@@ -29,8 +29,8 @@ Classes:
 		d. Integer called DaysUntilDue
 		e. nextDay:
 			-decremement daysUntilDue
-	3. UserInterface
-		a.takeUserInput:
+	3. ProcessInput
+		a.takeUserInput (String input):
 			-get a line of text from the user
 			-convert to lower case
 			-do a bunch if statements to find out what thee user typed
